@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tickets</title>
+    <link rel="stylesheet" href="./bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .newinput{
+            font-size: 30px;
+            margin: 10px;
+            background-color: rgba(81, 81, 81, 0);
+            border: 0;
+            border-bottom: 5px solid white;
+            outline: none;
+            font-weight: 700;
+        }
+        #veri{
+            font-size: 50px;
+            margin: 10px;
+            background-color: rgba(81, 81, 81, 0);
+            border: 0;
+            width: 100px;
+            font-weight: 700;
+        }
+        .gg{
+            color: white; 
+            background-color: gray; 
+            border: 0;
+            border-radius: 10px;
+            width: 444px; 
+            font-weight: 700;
+            font-size: 30px;
+        }      
+        #veri{
+            position: absolute;
+            top: 410px;
+            left: 1000px;
+            
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="home.html" class="m-auto">Home</a>
+        <a href="news.html" class="m-auto">News</a>
+        <img src="./img/logo.png" alt="logo">
+        <a href="buriness.html" class="m-auto">Buriness</a>
+        <a href="tickets.html" class="m-auto">Tickets</a>
+        
+    </nav>
+    <main >
+        <form action="./tickets.php" style="border-radius: 30px; width: auto; padding: 10px; margin-top: 50px; height: auto; background-color: rgb(170, 170, 170);" method="post">
+            <input placeholder="First name" type="text" class="newinput" name="first-name" required><br>
+            <input placeholder="Last-name" type="text" class="newinput" name="last-name" required><br>
+            <input placeholder="Passwork" type="password"  class="newinput" name="password" required><br>
+            <input placeholder="Phone" type="text" class="newinput" name="phone" required><br>
+            <input type="text" placeholder="驗證碼" style="border-color: rgb(71, 71, 71);" class="newinput" name="ans" required maxlength="4"><br>
+            <div id="veri"></div>
+            <input type="hidden" name="veri" class="ans" id="checkAns">
+            <button class="gg">送出</button>
+        </form>
+    </main>
+    <footer>
+        <img src="./img/facebook.png" alt="">
+        <p>Copyright &copy; 2024 FIBEX All Rights Reserved</p>
+        <img src="./img/google.png" alt="">
+    </footer>
+</body>
+<script src="./jquery/jquery.js"></script>
+<script src="./bootstrap/bootstrap.js"></script>
+<script>
+    function randomNum(){
+        veri = Math.floor(Math.random()* 8999 + 1000 );
+        $("#veri").text(veri)
+    }
+    randomNum()
+</script>
+</html>

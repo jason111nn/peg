@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <a href="home.html" class="m-auto">Home</a>
+        <a href="news.html" class="m-auto">News</a>
+        <img src="./img/logo.png" alt="logo">
+        <a href="buriness.html" class="m-auto">Buriness</a>
+        <a href="tickets.html" class="m-auto">Tickets</a>
+    </nav>
+    <div style="margin: 20px;"  ></div>
+    <div  class="text-center m-auto" style="width: 800px;">
+        <h1>活動資訊</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto vero, quae dolorem magnam quis modi eum deserunt repudiandae eligendi nobis quod architecto pariatur dolore rem cumque, molestias quisquam alias. Iure.</p>
+    </div>
+    <main>
+        <div id="slider" data-ride="carousel" class="carousel slide w-50 m-auto"
+            style="margin-top: 100px; overflow: hidden; border-radius: 30px;">
+            <ol class="carousel-indicators">
+                <li data-target="#slider" data-slide-to="0" class="active"></li>
+                <li data-target="#slider" data-slide-to="1"></li>
+                <li data-target="#slider" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner ">
+                <div class="carousel-item active">
+                    <img src="./img/1.jpg" alt="" class="d-block w-100">
+                    <div class="carousel-caption w-100" style="position: absolute; bottom: 0;left: 0;">
+                        <h5>NO.1</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/2.jpg" alt="" class="d-block w-100">
+                    <div class="carousel-caption w-100" style="position: absolute; bottom: 0;left: 0;">
+                        <h5>NO.2</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/3.jpg" alt="" class="d-block w-100">
+                    <div class="carousel-caption w-100" style="position: absolute; bottom: 0;left: 0;">
+                        <h5>NO.3</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev " type="button" data-slide="prev" data-target="#slider">
+                <span class="carousel-control-prev-icon "></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-slide="next" data-target="#slider">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </main>
+    <footer>
+        <img src="./img/facebook.png" alt="">
+        <p>Copyright &copy; 2024 FIBEX All Rights Reserved</p>
+        <img src="./img/google.png" alt="">
+    </footer>
+</body>
+<script src="./jquery/jquery.js"></script>
+<script src="./bootstrap/bootstrap.js"></script>
+</html>

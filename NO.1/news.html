@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tickets</title>
+    <link rel="stylesheet" href="./bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #a>img,#b>img,#c>img,#d>img,#e>img{
+            width: 20px;
+            transition: .3s;
+        }
+        #a>img:hover,#b>img:hover,#c>img:hover,#d>img:hover,#e>img:hover{
+            width: 30px;
+            transition: .3s;
+        }
+        .news{
+            opacity: 0;
+        }
+        .news>div{
+            position: absolute;
+            bottom: 150px;
+            width: 800px;
+            background-color: rgba(255, 255, 255, 0.626);
+            border-radius: 30px;
+        }
+        .news>img{
+            position: absolute;
+            top: 130px;
+            width: 800px;
+        }
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="home.html" class="m-auto">Home</a>
+        <a href="news.html" class="m-auto">News</a>
+        <img src="./img/logo.png" alt="logo">
+        <a href="buriness.html" class="m-auto">Buriness</a>
+        <a href="tickets.html" class="m-auto">Tickets</a>
+    </nav>
+    <main>
+        <div id="a" style="position: absolute; top: 280px; left: 300px;"><img src="./box.png" alt=""></div>
+        <div id="b" style="position: absolute; top: 350px; left: 320px;"><img src="./box.png" alt=""></div>
+        <div id="c" style="position: absolute; top: 300px; left: 500px;"><img src="./box.png" alt=""></div>
+        <div id="d" style="position: absolute; top: 400px; left: 700px;"><img src="./box.png" alt=""></div>
+        <div id="e" style="position: absolute; top: 270px; left: 700px;"><img src="./box.png" alt=""></div>
+
+        <div style="width: 800px; height: 641px; margin: 50px; padding: 15px; border-radius: 30px; border: 5px solid black;">
+            <img src="./img/world.png" alt="" class="w-100">
+        </div>
+        <div style="margin: 50px; width: 800px;">
+            <div id="News1" class="news">
+                <img src="./img/News1.jpg" alt="" style="border-radius: 20px; border: 5px solid;">
+                <div class="text-center">
+                    <h4>n1</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima porro corporis possimus repellat error nulla eaque temporibus provident, qui autem sunt quidem nisi animi quos assumenda illum laborum nam fuga.</p>
+                </div>
+            </div>
+            <div id="News2" class="news">
+                <img src="./img/News2.jpg" alt="" style="border-radius: 20px; border: 5px solid;">
+                <div class="text-center">
+                    <h4>n2</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima porro corporis possimus repellat error nulla eaque temporibus provident, qui autem sunt quidem nisi animi quos assumenda illum laborum nam fuga.</p>
+                </div>
+            </div>
+            <div id="News3" class="news">
+                <img src="./img/News3.jpg" alt="" style="border-radius: 20px; border: 5px solid;">
+                <div class="text-center">
+                    <h4>n3</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima porro corporis possimus repellat error nulla eaque temporibus provident, qui autem sunt quidem nisi animi quos assumenda illum laborum nam fuga.</p>
+                </div>
+            </div>
+            <div id="News4" class="news">
+                <img src="./img/News4.jpg" alt="" style="border-radius: 20px; border: 5px solid;">
+                <div class="text-center">
+                    <h4>n5</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima porro corporis possimus repellat error nulla eaque temporibus provident, qui autem sunt quidem nisi animi quos assumenda illum laborum nam fuga.</p>
+                </div>
+            </div>
+            <div id="News5" class="news">
+                <img src="./img/News5.jpg" alt="" style="border-radius: 20px; border: 5px solid;">
+                <div class="text-center">
+                    <h4>n6</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima porro corporis possimus repellat error nulla eaque temporibus provident, qui autem sunt quidem nisi animi quos assumenda illum laborum nam fuga.</p>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+    <footer>
+        <img src="./img/facebook.png" alt="">
+        <p>Copyright &copy; 2024 FIBEX All Rights Reserved</p>
+        <img src="./img/google.png" alt="">
+    </footer>
+</body>
+<script src="./jquery/jquery.js"></script>
+<script src="./news.js"></script>
+<script src="./bootstrap/bootstrap.js"></script>
+</html>
